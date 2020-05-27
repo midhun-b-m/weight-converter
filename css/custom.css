@@ -1,0 +1,19 @@
+h1 {
+	margin-bottom: 5px;
+}
+h6 {
+	margin-bottom: 20px;
+}
+body{
+	margin-top: 70px;
+	background:#333;
+	color: white;
+}
+
+.card{
+	padding: .375rem .75rem
+}
+
+.radio{
+	margin-bottom: 10px;
+}

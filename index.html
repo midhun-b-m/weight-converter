@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible">
+	
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- custom css-->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+
+	<title>Weight Converter</title>
+</head>
+<body>
+	<!-- Container start-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="display-4 text-center">Weight converter</h1>	
+				<h6 class="display-6 text-center">Select the input unit and enter the value to convert</h6>
+				<form>
+					<!-- form input -->
+					<div class="form-group">
+						<input id="Input" type="number" class="form-control form-control-lg" placeholder="Enter weight in pounds..." >
+					</div>
+				</form>
+				
+				<!-- Radio buttons-->
+				<div class="radio">
+					<div class="custom-control custom-radio custom-control-inline">
+  						<input type="radio" class="custom-control-input" id="PRadio" name="Radio" checked>
+ 					 	<label class="custom-control-label" for="PRadio">Pounds</label>
+					</div>
+
+					<div class="custom-control custom-radio custom-control-inline">
+  						<input type="radio" class="custom-control-input" id="GRadio" name="Radio">
+  						<label class="custom-control-label" for="GRadio">Grams</label>
+					</div>
+
+
+					<div class="custom-control custom-radio custom-control-inline">
+  						<input type="radio" class="custom-control-input" id="KGRadio" name="Radio">
+  						<label class="custom-control-label" for="KGRadio">Kilograms</label>
+					</div>
+
+					<div class="custom-control custom-radio custom-control-inline">
+  						<input type="radio" class="custom-control-input" id="OZRadio" name="Radio">
+  						<label class="custom-control-label" for="OZRadio">Ounces</label>
+					</div>
+				</div>			
+		
+
+				<div id="output">
+					
+					<div id="card1" class="card bg-primary mb-2">
+						<div class="card-block">
+							<h4 id="card1-name" >Grams :</h4>
+							<div id="gramsoutput" ></div>
+						</div>
+					</div>
+				
+
+					<div id="card2"class="card bg-success mb-2">
+						<div class="card-block">
+							<h4 id="card2-name" >Kilograms :</h4>
+							<div id="kgoutput"></div>
+						</div>
+					</div>
+						
+
+					<div   id="card3" class="card bg-danger mb-2">
+						<div class="card-block">
+							<h4 id="card3-name"> Ounces :</h4>
+							<div id="ozoutput"></div>
+						</div>
+					</div>
+
+					<div  id="card4" class="card bg-warning mb-2">
+						<div class="card-block">
+							<h4 id="card4-name">Pounds :</h4>
+							<div id="poutput"></div>
+						</div>
+					</div>	
+					
+					
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container end--> 
+
+<!-- Custom JavaScript -->
+<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>
